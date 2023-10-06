@@ -18,29 +18,81 @@
 
       <form action="" method="get">
         <label for="name">Name:</label>
-        <input type="text" name="name" id="name" required/>
-        <br>
+        <input type="text" name="name" id="name" required />
+        <br />
 
         <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required/>
-        <br>
+        <input type="email" name="email" id="email" required />
+        <br />
 
         <label for="phone">Phone:</label>
-        <input type="tel" name="phone" id="Phone" required/>
-        <br>
+        <input type="tel" name="phone" id="Phone" required />
+        <br />
 
         <label for="password">Password:</label>
-        <input type="password" name="password" id="password" required/>
-        <br>
+        <input type="password" name="password" id="password" required />
+        <br />
 
         <label for="dob">Date of Birth:</label>
-        <input type="date" min="1970-01-01" max="2005-05-10" name="dob" id="dob">
-        <br>
+        <input
+          type="date"
+          min="1970-01-01"
+          max="2005-05-10"
+          name="dob"
+          id="dob"
+        />
+        <br />
 
         <label for="age">Age:</label>
-        <input type="number" min="18" max="40" name="age" id="age">
-        <br>
+        <input type="number" min="18" max="40" name="age" id="age" />
+        <br />
 
+        <label for="country">Select your country</label>
+        <select name="country" id="country">
+          <option value="" disabled selected>---Choose a country---</option>
+
+          <optgroup label="south america">
+            <option value="america">America</option>
+            <option value="mexico">Mexico</option>
+          </optgroup>
+
+          <optgroup label="Asia">
+            <option value="indonesia">Indonesia</option>
+            <option value="malaysia">Malaysia</option>
+            <option value="dubai">Dubai</option>
+          </optgroup>
+
+          <optgroup label="Africa">
+            <option value="nigeria">Nigeria</option>
+            <option value="ghana">Ghana</option>
+          </optgroup>
+        </select>
+        <br />
+
+        <label for="">Languages</label>
+        <br />
+        <label for="english">English</label>
+        <input type="checkbox" id="english" name="Languages" />
+
+        <label for="French">French</label>
+        <input type="checkbox" id="French" name="Languages" />
+
+        <label for="Igbo">Igbo</label>
+        <input type="checkbox" id="Igbo" name="Languages" />
+
+        <label for="Hausa">Hausa</label>
+        <input type="checkbox" id="hausa" name="Languages" />
+
+        <br />
+        <label for="">Sex</label>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="sex" />
+
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="sex" />
+        <br />
+
+        <!--<input type="submit" value="submit" name="" id=> -->
         <button>Submit</button>
       </form>
     </main>
